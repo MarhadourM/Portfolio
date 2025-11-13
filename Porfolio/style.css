@@ -1,0 +1,225 @@
+/* --- Style global --- */
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* --- Header --- */
+header {
+    background-color: #222;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    
+}
+header h1 a {
+    text-decoration: none;  
+    color: white;           
+}
+
+/* --- Navigation --- */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #00bcd4;
+}
+
+/* --- Contenu principal --- */
+main {
+    text-align: center;
+    margin-top: 100px;
+}
+
+
+
+/* --- Menu déroulant dans la page --- */
+.menu {
+    position: absolute;
+    top: 100px;
+    right: 60px;
+}
+
+.menu-btn {
+    background-color: #222;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.menu-btn:hover {
+    background-color: #00bcd4;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #333;
+    min-width: 220px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.dropdown a {
+    color: white;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown a:hover {
+    background-color: #00bcd4;
+}
+
+/* affichage du menu au survol */
+.menu:hover .dropdown {
+    display: block;
+}
+
+/* --- Overlay --- */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.overlay-content {
+    background: white;
+    padding: 30px;
+    max-width: 800px;
+    width: 90%;
+    border-radius: 10px;
+    text-align: left;
+    overflow-y: auto;
+    max-height: 80vh;
+}
+.tabs {
+  display: flex;
+  gap: 10px;
+  border-bottom: 2px solid #ddd;
+  margin-bottom: 15px;
+}
+
+.tablink {
+  background: #eee;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px 5px 0 0;
+}
+
+.tablink:hover {
+  background: #00bcd4;
+  color: white;
+}
+
+.tabcontent {
+  display: none;
+}
+
+.tabcontent.active {
+  display: block;
+}
+
+
+.close {
+    float: right;
+    font-size: 25px;
+    cursor: pointer;
+    color: #555;
+}
+
+.close:hover {
+    color: #000;
+}
+
+main {
+    padding: 50px;
+    text-align: center;
+}
+
+/* --- Tableau d’auto-évaluation --- */
+.auto-eval {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.auto-eval th {
+  background-color: #222;
+  color: white;
+  padding: 10px;
+  text-align: left;
+  font-size: 1.1em;
+}
+
+.auto-eval td {
+  border: 1px solid #ddd;
+  padding: 10px 15px;
+  vertical-align: top;
+}
+
+.auto-eval .etat {
+  width: 180px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.auto-eval .non-acquis {
+  background-color: #ffdddd;
+  color: #c0392b;
+}
+
+.auto-eval .en-cours {
+  background-color: #fff3cd;
+  color: #c79000;
+}
+
+.auto-eval .acquis {
+  background-color: #d4edda;
+  color: #2e7d32;
+}
+
+.auto-eval ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+

@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compétences</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script src="script.js"></script>
+<body>
+    <header>
+        <h1><a href="index.html">Mon Portfolio</a></h1>
+        <nav>
+            <ul>
+                <li><a href="#">Compétences</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="cv.html">CV</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Mes Compétences</h2>
+        <p>Sélectionne une compétence pour consulter son apprentissage critique :</p>
+        <p> D'apres le referentiel du BUT informatique</p>
+        <a href="./ressources/Referentiel BUT informatique.pdf" target="_blank"> Referentiel</a>
+        <div class="menu">
+            <button class="menu-btn">Choisir une compétence ▾</button>
+            <div class="dropdown">
+                <a href="#" onclick="openOverlay('c1')">Compétence 1</a>
+                <a href="#" onclick="openOverlay('c2')">Compétence 2</a>
+                <a href="#" onclick="openOverlay('c3')">Compétence 3</a>
+                <a href="#" onclick="openOverlay('c4')">Compétence 4</a>
+                <a href="#" onclick="openOverlay('c5')">Compétence 5</a>
+                <a href="#" onclick="openOverlay('c6')">Compétence 6</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Overlays -->
+
+    <!-- Comptence 1 -->
+    <div id="c1" class="overlay">
+        <div class="overlay-content">
+            <div class="tabs">
+                <button class="tablink" onclick="openTab(event, 'resume_c1')">Résumé</button>
+                <button class="tablink" onclick="openTab(event, 'ac1_c1')">AC1</button>
+                <button class="tablink" onclick="openTab(event, 'ac2_c1')">AC2</button>
+                <button class="tablink" onclick="openTab(event, 'ac3_c1')">AC3</button>
+                <button class="tablink" onclick="openTab(event, 'ac4_c1')">AC4</button>
+            </div>
+            <span class="close" onclick="closeOverlay('c1')">&times;</span>
+            <div id="resume_c1" class ="tabcontent">
+                <h2>Compétence 1 — Partir des exigences et aller jusqu’à une application complète</h2>
+    
+                <p>ressources concerner par la competences</p>
+            </div>
+
+            <!-- AC1 -->
+            <div id="ac1_c1" class="tabcontent">
+            <h3>AC1 — Élaborer & implémenter les spécifications fonctionnelles et non-fonctionnelles</h3>
+            <table class="auto-eval">
+                <tbody>
+                    <tr>
+                    <td class="etat non-acquis">❌ Non acquis</td>
+                    <td>
+                        <ul>
+                        <li>Exigences non comprises</li>
+                        <li>Manque de documents (pas de user stories, cas d’utilisation…)</li>
+                        <li>Fonctionnalités absentes par rapport au besoin client</li>
+                        </ul>
+                    </td>
+                    </tr>
+
+                    <tr>
+                    <td class="etat en-cours">⚠️ En cours d’acquisition</td>
+                    <td>
+                        <ul>
+                        <li>Spécifications partielles</li>
+                        <li>Critères d’acceptation incomplets ou peu exploitables</li>
+                        <li>Certaines contraintes non fonctionnelles oubliées (performance, sécurité…)</li>
+                        </ul>
+                    </td>
+                    </tr>
+
+                    <tr>
+                    <td class="etat acquis">✅ Acquis</td>
+                    <td>
+                        <ul>
+                        <li>Spécifications complètes et structurées</li>
+                        <li>Besoins utilisateurs et techniques clairement traduits</li>
+                        <li>Critères d’acceptation validés par les tests</li>
+                        </ul>
+                    </td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+
+            <!-- AC2 -->
+            <div id="ac2_c1" class="tabcontent" style="display:none">
+            <h3>AC2 — Accessibilité & ergonomie</h3>
+                <table class="auto-eval">
+                <tbody>
+                    <tr>
+                    <td class="etat non-acquis">❌ Non acquis</td>
+                    <td>
+                        <ul>
+                        <li>Interface difficile ou impossible à utiliser</li>
+                        <li>Problèmes de lisibilité : contraste, labels, feedbacks absents</li>
+                        <li>Navigation incohérente</li>
+                        </ul>
+                    </td>
+                    </tr>
+
+                    <tr>
+                    <td class="etat en-cours">⚠️ En cours d’acquisition</td>
+                    <td>
+                        <ul>
+                        <li>Interface fonctionnelle mais peu intuitive</li>
+                        <li>Accessibilité partielle (ex : pas d’utilisation clavier)</li>
+                        <li>Responsive partiel ou pas testé</li>
+                        </ul>
+                    </td>
+                    </tr>
+
+                    <tr>
+                    <td class="etat acquis">✅ Acquis</td>
+                    <td>
+                        <ul>
+                        <li>Interface fluide, intuitive et logique</li>
+                        <li>Respect de bonnes pratiques d’accessibilité (contrastes, ARIA…)</li>
+                        <li>Navigation claire avec retours visuels (feedback utilisateur)</li>
+                        </ul>
+                    </td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+
+            <!-- AC3 -->
+            <div id="ac3_c1" class="tabcontent" style="display:none">
+            <h3>AC3 — Conception & bonnes pratiques</h3>
+            <table class="auto-eval">
+                <tbody>
+                    <tr>
+                    <td class="etat non-acquis">❌ Non acquis</td>
+                    <td>
+                        <ul>
+                        <li>Code confus, non documenté</li>
+                        <li>Nom des variables peu clairs</li>
+                        <li>Pas de découpage logique → tout dans un seul fichier</li>
+                        </ul>
+                    </td>
+                    </tr>
+
+                    <tr>
+                    <td class="etat en-cours">⚠️ En cours d’acquisition</td>
+                    <td>
+                        <ul>
+                        <li>Architecture présente mais améliorable</li>
+                        <li>Quelques commentaires et conventions respectées</li>
+                        <li>Git utilisé mais désorganisé (commits flous)</li>
+                        </ul>
+                    </td>
+                    </tr>
+
+                    <tr>
+                    <td class="etat acquis">✅ Acquis</td>
+                    <td>
+                        <ul>
+                        <li>Architecture propre (séparation des responsabilités)</li>
+                        <li>Code propre et lisible, documentation utile</li>
+                        <li>Git avec bonnes pratiques : branches, messages clairs</li>
+                        </ul>
+                    </td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+
+            <!-- AC4 -->    
+            <div id="ac4_c1" class="tabcontent" style="display:none">
+            <h3>AC4 — Tests & validation</h3>
+                <table class="auto-eval">
+                <tbody>
+                    <tr>
+                    <td class="etat non-acquis">❌ Non acquis</td>
+                    <td>
+                        <ul>
+                        <li>Aucun test écrit ou exécuté</li>
+                        <li>Bugs non identifiés, pas d’analyse des écarts</li>
+                        </ul>
+                    </td>
+                    </tr>
+
+                    <tr>
+                    <td class="etat en-cours">⚠️ En cours d’acquisition</td>
+                    <td>
+                        <ul>
+                        <li>Tests uniquement sur fonctionnalités principales</li>
+                        <li>Bugs identifiés, quelques corrections</li>
+                        <li>Pas d’automatisation</li>
+                        </ul>
+                    </td>
+                    </tr>
+
+                    <tr>
+                    <td class="etat acquis">✅ Acquis</td>
+                    <td>
+                        <ul>
+                        <li>Tests complets & analysés (unitaires + intégration)</li>
+                        <li>Automatisation ou script de tests</li>
+                        <li>Validation claire des écarts et corrections appliquées</li>
+                        </ul>
+                    </td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+     <!-- Compétence 2 -->    
+    <div id="c2" class="overlay">
+        <div class="overlay-content">
+            <div class="tabs">
+                <button class="tablink" onclick="openTab(event, 'resume_c2')">Résumé</button>
+                <button class="tablink" onclick="openTab(event, 'ac1_c2')">AC1</button>
+                <button class="tablink" onclick="openTab(event, 'ac2_c2')">AC2</button>
+                <button class="tablink" onclick="openTab(event, 'ac3_c2')">AC3</button>
+                <button class="tablink" onclick="openTab(event, 'ac4_c2')">AC4</button>
+            </div>
+            <span class="close" onclick="closeOverlay('c2')">&times;</span>
+
+            <div id="resume_c2" class ="tabcontent">
+                <h2>Compétence 2 — Sélectionner les algorithmes adéquats</h2>
+    
+                <p>ressources concerner par la competences</p>
+            </div>
+            <!-- AC1 -->  
+            <div id="ac1_c2" class="tabcontent">
+            <h3>AC1 — Choisir des structures de données complexes adaptées au problème</h3>
+            <table class="auto-eval">
+                <tbody>
+                    <tr>
+                    <td class="etat non-acquis"> Non acquis</td>
+                    <td>
+                        <ul>
+                        <li>Les structures utilisées ne permettent pas de résoudre correctement le problème</li>
+                        <li>Les données sont dupliquées ou mal organisées</li>
+                        <li>Je choisis par habitude, sans réfléchir au besoin</li>
+                        </ul>
+                    </td>
+                    </tr>
+
+                    <tr>
+                    <td class="etat en-cours"> En cours d’acquisition</td>
+                    <td>
+                        <ul>
+                        <li>Je choisis une structure cohérente mais le choix n’est pas justifié</li>
+                        <li>J’utilise quelques structures avancées (Set, Map…)</li>
+                        <li>Je modifie une structure si elle pose un souci</li>
+                        </ul>
+                    </td>
+                    </tr>
+
+                    <tr>
+                    <td class="etat acquis"> Acquis</td>
+                    <td>
+                        <ul>
+                        <li>Je compare plusieurs structures avant de choisir</li>
+                        <li>Mon choix prend en compte la performance et la mémoire</li>
+                        <li>Je peux expliquer pourquoi ma structure est la meilleure pour ce cas</li>
+                        </ul>
+                    </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            </div>
+            <!-- AC2 -->  
+            <div id="ac2_c2" class="tabcontent" style="display:none">
+            <h3>AC2 — Utiliser des techniques algorithmiques adaptées pour des problèmes complexes (par ex. recherche opérationnelle, méthodes arborescentes, optimisation globale, intelligence artificielle...)</h3>
+            <table class="auto-eval">
+                <tbody>
+                    <tr>
+                    <td class="etat non-acquis">Non acquis</td>
+                    <td>
+                        <ul>
+                        <li>Les résultats sont faux ou incomplets</li>
+                        <li>L'algorithme ne correspond pas au type de problème</li>
+                        <li>J’applique une solution “au hasard”</li>
+                        </ul>
+                    </td>
+                    </tr>
+
+                    <tr>
+                    <td class="etat en-cours">En cours d’acquisition</td>
+                    <td>
+                        <ul>
+                        <li>L’algorithme fonctionne mais est trop lent ou lourd</li>
+                        <li>Je fais quelques optimisations sans mesure concrète</li>
+                        <li>J’utilise parfois des algorithmes appris en cours</li>
+                        </ul>
+                    </td>
+                    </tr>
+
+                    <tr>
+                    <td class="etat acquis">Acquis</td>
+                    <td>
+                        <ul>
+                        <li>Je choisis un algorithme en fonction des contraintes (temps, mémoire, structure)</li>
+                        <li>J’analyse la complexité Big-O</li>
+                        <li>Je propose des améliorations pertinentes</li>
+                        </ul>
+                    </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            </div>
+            <!-- AC3 -->  
+            <div id="ac3_c2" class="tabcontent" style="display:none">
+            <h3>AC3 — Comprendre les enjeux et moyens de sécurisation des données et du code</h3>
+            <table class="auto-eval">
+                <tbody>
+                    <tr>
+                    <td class="etat non-acquis"> Non acquis</td>
+                    <td>
+                        <ul>
+                        <li>Les données ne sont pas vérifiées avant traitement</li>
+                        <li>Le programme peut planter ou être exploité</li>
+                        <li>Pas de gestion des entrées malveillantes</li>
+                        </ul>
+                    </td>
+                    </tr>
+
+                    <tr>
+                    <td class="etat en-cours">En cours d’acquisition</td>
+                    <td>
+                        <ul>
+                        <li>Je filtre certaines données mais pas toutes</li>
+                        <li>Gestion d’erreur partielle</li>
+                        <li>Mots de passe ou données sensibles peu protégés</li>
+                        </ul>
+                    </td>
+                    </tr>
+
+                    <tr>
+                    <td class="etat acquis">Acquis</td>
+                    <td>
+                        <ul>
+                        <li>Vérification de toutes les données avant utilisation</li>
+                        <li>Traitement sécurisé contre les injections et débordements</li>
+                        <li>Traçabilité et gestion correcte des erreurs</li>
+                        </ul>
+                    </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            </div>
+            <!-- AC4 -->  
+            <div id="ac4_c2" class="tabcontent" style="display:none">
+            <h3>AC4 — Évaluer l’impact environnemental et sociétal des solutions proposées</h3>
+                <table class="auto-eval">
+                    <tbody>
+                        <tr>
+                        <td class="etat non-acquis"> Non acquis</td>
+                        <td>
+                            <ul>
+                            <li>Je ne prends pas en compte les ressources utilisées</li>
+                            <li>L’application gaspille CPU / mémoire</li>
+                            <li>Pas de réflexion sur l’impact des choix techniques</li>
+                            </ul>
+                        </td>
+                        </tr>
+
+                        <tr>
+                        <td class="etat en-cours">En cours d’acquisition</td>
+                        <td>
+                            <ul>
+                            <li>Quelques optimisations mais sans justification</li>
+                            <li>Impact évoqué après coup</li>
+                            <li>Améliorations ponctuelles</li>
+                            </ul>
+                        </td>
+                        </tr>
+
+                        <tr>
+                        <td class="etat acquis"> Acquis</td>
+                        <td>
+                            <ul>
+                            <li>Optimisation pensée dès la conception</li>
+                            <li>Solution plus économe en ressources</li>
+                            <li>Documentation des impacts réduits sur l’environnement ou l’utilisation</li>
+                            </ul>
+                        </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            
+            
+        </div>
+    </div>
+ <!-- Competence 3 -->  
+    <div id="c3" class="overlay">
+        <div class="overlay-content">
+            <div class="tabs">
+                <button class="tablink" onclick="openTab(event, 'resume_c3')">Resumé</button>
+                <button class="tablink" onclick="openTab(event, 'ac1_c3')">AC1</button>
+                <button class="tablink" onclick="openTab(event, 'ac2_c3')">AC2</button>
+                <button class="tablink" onclick="openTab(event, 'ac3_c3')">AC3</button>
+            </div>
+            <span class="close" onclick="closeOverlay('c3')">&times;</span>
+ 
+            <div id="resume_c3" class="tabcontent" style="display:none">
+                <h3>Compétence 3 — Déployer des services dans une architecture réseau</h3>
+                <p> Ressources concerner par la competnece</p>
+            </div>
+
+            <!-- AC1 --> 
+            <div id="ac1_c3" class="tabcontent" style="display:none">
+                <h3>AC1 — Concevoir et développer des applications communicantes</h3>
+                <table class="auto-eval">
+                    <tbody>
+                        <tr>
+                        <td class="etat non-acquis">Non acquis</td>
+                        <td>
+                            <ul>
+                            <li>L’application ne parvient pas à communiquer avec un autre service</li>
+                            <li>Protocole utilisé incorrect ou non respecté</li>
+                            <li>Aucune gestion des erreurs réseau</li>
+                            </ul>
+                        </td>
+                        </tr>
+
+                        <tr>
+                        <td class="etat en-cours">En cours d’acquisition</td>
+                        <td>
+                            <ul>
+                            <li>Communication fonctionnelle mais instable</li>
+                            <li>Le protocole est utilisé mais sans justification</li>
+                            <li>Tests réseaux incomplets</li>
+                            </ul>
+                        </td>
+                        </tr>
+
+                        <tr>
+                        <td class="etat acquis">Acquis</td>
+                        <td>
+                            <ul>
+                            <li>Communication fiable entre services (API / socket / client-serveur)</li>
+                            <li>Protocole adapté au besoin du projet</li>
+                            <li>Gestion et analyse des erreurs réseau documentées</li>
+                            </ul>
+                        </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- AC2 --> 
+            <div id="ac2_c3" class="tabcontent" style="display:none">
+                <h3>AC2 — Déployer des services sur un serveur ou une machine virtuelle</h3>
+                <table class="auto-eval">
+                    <tbody>
+                        <tr>
+                        <td class="etat non-acquis">Non acquis</td>
+                        <td>
+                            <ul>
+                            <li>Application non déployée ou inaccessible à distance</li>
+                            <li>Mauvaise configuration réseau (port/IP)</li>
+                            <li>Dépendances manquantes sur le serveur</li>
+                            </ul>
+                        </td>
+                        </tr>
+
+                        <tr>
+                        <td class="etat en-cours">En cours d’acquisition</td>
+                        <td>
+                            <ul>
+                            <li>Déploiement fonctionnel mais instable</li>
+                            <li>Service accessible seulement localement</li>
+                            <li>Configuration réseau partielle (certains ports ou permissions incorrects)</li>
+                            </ul>
+                        </td>
+                        </tr>
+
+                        <tr>
+                        <td class="etat acquis">Acquis</td>
+                        <td>
+                            <ul>
+                            <li>Service en ligne accessible et stable</li>
+                            <li>Déploiement structuré (script, Docker, machine virtuelle...)</li>
+                            <li>Documentation de l’installation et du lancement</li>
+                            </ul>
+                        </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- AC3 --> 
+            <div id="ac3_c3" class="tabcontent" style="display:none">
+                <h3> AC3 — Sécuriser les services et les données transmises</h3>
+                <table class="auto-eval">
+                    <tbody>
+                        <tr>
+                        <td class="etat non-acquis">Non acquis</td>
+                        <td>
+                            <ul>
+                            <li>Aucun contrôle d’accès</li>
+                            <li>Ports ouverts sans protection</li>
+                            <li>Communications en clair</li>
+                            </ul>
+                        </td>
+                        </tr>
+
+                        <tr>
+                        <td class="etat en-cours">En cours d’acquisition</td>
+                        <td>
+                            <ul>
+                            <li>Authentification mise en place mais pas durcie</li>
+                            <li>Pare-feu ou certificats configurés partiellement</li>
+                            <li>Failles identifiées mais pas toutes corrigées</li>
+                            </ul>
+                        </td>
+                        </tr>
+
+                        <tr>
+                        <td class="etat acquis">Acquis</td>
+                        <td>
+                            <ul>
+                            <li>Gestion des accès et des permissions réglée précisément</li>
+                            <li>Sécurisation du réseau (TLS/HTTPS, pare-feu, filtrage...)</li>
+                            <li>Analyse des vulnérabilités et corrections effectuées</li>
+                            </ul>
+                        </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>         
+        </div>
+    </div>
+
+
+
+
+<!--Compétence 4--> 
+    <div id="c4" class="overlay">
+        <div class="overlay-content">
+            <div class="tabs">
+                <button class="tablink" onclick="openTab(event, 'resume_c4')">Resumé</button>
+                <button class="tablink" onclick="openTab(event, 'ac1_c4')">AC1</button>
+                <button class="tablink" onclick="openTab(event, 'ac2_c4')">AC2</button>
+                <button class="tablink" onclick="openTab(event, 'ac3_c4')">AC3</button>
+                <button class="tablink" onclick="openTab(event, 'ac4_c4')">AC4</button>
+            </div>
+            <span class="close" onclick="closeOverlay('c4')">&times;</span>
+
+            
+             <div id ="resume_c4" class="tabcontent" style="display:none">
+                <h3>Compétence 4 — Optimiser une base de données et assurer sa sécurité</h3>
+                <p> resources liée à la comptences</p>
+             </div>
+             <!-- AC1 --> 
+             <div id ="ac1_c4" class="tabcontent" style="display:none">
+                <h3>AC1 — Concevoir une base de données cohérente et optimisée</h3>
+                <table class="auto-eval">
+                    <tbody>
+                        <tr>
+                        <td class="etat non-acquis">Non acquis</td>
+                        <td>
+                            <ul>
+                            <li>Structure de la base incorrecte (relations erronées)</li>
+                            <li>Données redondantes ou anomalies d’intégrité</li>
+                            <li>Pas de contraintes (clé primaire, clé étrangère...)</li>
+                            </ul>
+                        </td>
+                        </tr>
+
+                        <tr>
+                        <td class="etat en-cours">En cours d’acquisition</td>
+                        <td>
+                            <ul>
+                            <li>Modèle globalement correct mais à améliorer</li>
+                            <li>Normalisation partielle ou non contrôlée</li>
+                            <li>Certaines contraintes manquent ou sont mal appliquées</li>
+                            </ul>
+                        </td>
+                        </tr>
+
+                        <tr>
+                        <td class="etat acquis">Acquis</td>
+                        <td>
+                            <ul>
+                            <li>Modèle clair, logique, normalisé et validé</li>
+                            <li>Contraintes d’intégrité bien définies</li>
+                            <li>Structure pensée pour la performance et l’évolution</li>
+                            </ul>
+                        </td>
+                        </tr>
+                    </tbody>
+                </table>
+             </div>
+
+             <!-- AC2 -->
+             <div id ="ac2_c4" class="tabcontent" style="display:none">
+                <h3> AC2 — Manipuler les données avec des requêtes SQL</h3>
+                <table class="auto-eval">
+                    <tbody>
+                        <tr>
+                        <td class="etat non-acquis">Non acquis</td>
+                        <td>
+                            <ul>
+                            <li>Requêtes mal écrites ou incorrectes</li>
+                            <li>Résultats faux ou incomplets</li>
+                            <li>Problèmes de jointures récurrents</li>
+                            </ul>
+                        </td>
+                        </tr>
+
+                        <tr>
+                        <td class="etat en-cours">En cours d’acquisition</td>
+                        <td>
+                            <ul>
+                            <li>Requêtes correctes mais pas optimisées</li>
+                            <li>Fonctionnalités avancées SQL partiellement maîtrisées</li>
+                            <li>Vérification des résultats insuffisante</li>
+                            </ul>
+                        </td>
+                        </tr>
+
+                        <tr>
+                        <td class="etat acquis">Acquis</td>
+                        <td>
+                            <ul>
+                            <li>Requêtes SQL efficaces pour tous les besoins du projet</li>
+                            <li>Complexité, jointures et agrégations maîtrisées</li>
+                            <li>Résultats vérifiés et documentés</li>
+                            </ul>
+                        </td>
+                        </tr>
+                    </tbody>
+                </table>
+             </div>
+
+             <!-- AC3 -->  
+             <div id ="ac3_c4" class="tabcontent" style="display:none">
+                <h3> AC3 — Connecter proprement une application à la base</h3>
+                 <table class="auto-eval">
+                    <tbody>
+                        <tr>
+                        <td class="etat non-acquis">Non acquis</td>
+                        <td>
+                            <ul>
+                            <li>L’application ne communique pas avec la base de données</li>
+                            <li>Requêtes directement dans l’interface</li>
+                            <li>Plantages lors des accès à la base</li>
+                            </ul>
+                        </td>
+                        </tr>
+
+                        <tr>
+                        <td class="etat en-cours">En cours d’acquisition</td>
+                        <td>
+                            <ul>
+                            <li>Connexion fonctionnelle mais architecture peu claire</li>
+                            <li>Gestion des erreurs limitée</li>
+                            <li>Configuration pas sécurisée ou mal structurée</li>
+                            </ul>
+                        </td>
+                        </tr>
+
+                        <tr>
+                        <td class="etat acquis">Acquis</td>
+                        <td>
+                            <ul>
+                            <li>Connexion stable et architecture claire (DAO / Repository / ORM)</li>
+                            <li>Paramètres de base dans des fichiers de configuration</li>
+                            <li>Logs et erreurs bien gérés</li>
+                            </ul>
+                        </td>
+                        </tr>
+                    </tbody>
+                </table>
+             </div>
+
+             <!-- AC4 -->
+             <div id ="ac4_c4" class="tabcontent" style="display:none">
+                <h3> AC4 — Sécuriser la base et les échanges</h3>
+                <table class="auto-eval">
+                    <tbody>
+                        <tr>
+                        <td class="etat non-acquis">Non acquis</td>
+                        <td>
+                            <ul>
+                            <li>Mots de passe en clair</li>
+                            <li>Vulnérable aux injections SQL</li>
+                            <li>Droits trop ouverts sur la base</li>
+                            </ul>
+                        </td>
+                        </tr>
+
+                        <tr>
+                        <td class="etat en-cours">En cours d’acquisition</td>
+                        <td>
+                            <ul>
+                            <li>Requêtes préparées mais pas partout</li>
+                            <li>Politique de rôles partielle</li>
+                            <li>Stockage sécurisé mais améliorations possibles</li>
+                            </ul>
+                        </td>
+                        </tr>
+
+                        <tr>
+                        <td class="etat acquis">Acquis</td>
+                        <td>
+                            <ul>
+                            <li>Requêtes préparées systématiquement</li>
+                            <li>Gestion des droits par rôle minimale mais efficace</li>
+                            <li>Données sensibles protégées et journalisation des accès</li>
+                            </ul>
+                        </td>
+                        </tr>
+                    </tbody>
+                </table>
+             </div>
+        </div>
+    </div>
+<!-- Competence 5 -->
+    <div id="c5" class="overlay">
+        <div class="overlay-content">
+            <div class="tabs">
+                <div class="tabs">
+                <button class="tablink" onclick="openTab(event, 'resume_c5')">Resumé</button>
+                <button class="tablink" onclick="openTab(event, 'ac1_c5')">AC1</button>
+                <button class="tablink" onclick="openTab(event, 'ac2_c5')">AC2</button>
+                <button class="tablink" onclick="openTab(event, 'ac3_c5')">AC3</button>
+                </div>
+            </div>
+            <span class="close" onclick="closeOverlay('c5')">&times;</span>
+            <div id="resume_c5" class ="tabcontent" style="display: none;">
+                <h3>Compétence 5 — Appliquer une démarche de suivi de projet</h3>
+                <p> ressources liées a cete competences</p>
+            </div>
+            <!-- AC1-->
+            <div id="ac1_c5" class ="tabcontent" style="display: none;">
+                <H3>AC1 —Comprendre et reformuler les besoins métier et utilisateurs</H3>
+                <table class="auto-eval">
+                    <tbody>
+                        <tr>
+                        <td class="etat non-acquis">Non acquis</td>
+                        <td>
+                            <ul>
+                            <li>Je ne comprends pas correctement les besoins du client</li>
+                            <li>Je ne sais pas reformuler les attentes clairement</li>
+                            <li>Je développe des fonctionnalités inutiles ou hors-sujet</li>
+                            </ul>
+                        </td>
+                        </tr>
+
+                        <tr>
+                        <td class="etat en-cours">En cours d’acquisition</td>
+                        <td>
+                            <ul>
+                            <li>Je comprends globalement les besoins mais il manque des précisions</li>
+                            <li>Je traduis seulement une partie en fonctionnalités</li>
+                            <li>Je fais des hypothèses sans validation systématique</li>
+                            </ul>
+                        </td>
+                        </tr>
+
+                        <tr>
+                        <td class="etat acquis">Acquis</td>
+                        <td>
+                            <ul>
+                            <li>Je sais expliquer clairement les attentes du client</li>
+                            <li>Je transforme les besoins en tâches concrètes</li>
+                            <li>Je fais valider la compréhension avant de développer</li>
+                            </ul>
+                        </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- AC2-->
+            <div id="ac2_c5" class ="tabcontent" style="display: none;">
+                <H3>AC2 — Planifier, organiser et suivre l’avancement du projet</H3>
+                <table class="auto-eval">
+                    <tbody>
+                        <tr>
+                        <td class="etat non-acquis">Non acquis</td>
+                        <td>
+                            <ul>
+                            <li>Aucune organisation : pas de planification</li>
+                            <li>Tâches attribuées au hasard</li>
+                            <li>Délais jamais respectés</li>
+                            </ul>
+                        </td>
+                        </tr>
+
+                        <tr>
+                        <td class="etat en-cours">En cours d’acquisition</td>
+                        <td>
+                            <ul>
+                            <li>Organisation de base mais pas bien maintenue</li>
+                            <li>Tâches mises à jour de façon irrégulière</li>
+                            <li>Difficulté à anticiper ou réagir aux problèmes</li>
+                            </ul>
+                        </td>
+                        </tr>
+
+                        <tr>
+                        <td class="etat acquis">Acquis</td>
+                        <td>
+                            <ul>
+                            <li>Planification claire et mise à jour régulière</li>
+                            <li>Priorités bien gérées selon les besoins et risques</li>
+                            <li>Suivi d’avancement transparent pour toute l’équipe</li>
+                            </ul>
+                        </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- AC3-->
+            <div id="ac3_c5" class ="tabcontent" style="display: none;">
+                <H3>AC3 — Communiquer efficacement autour du projet</H3>
+                <table class="auto-eval">
+                    <tbody>
+                        <tr>
+                        <td class="etat non-acquis">Non acquis</td>
+                        <td>
+                            <ul>
+                            <li>Je ne transmets pas les informations importantes</li>
+                            <li>Pas de compte rendu ou d’échange structuré</li>
+                            <li>Mauvaise compréhension entre équipe et client</li>
+                            </ul>
+                        </td>
+                        </tr>
+
+                        <tr>
+                        <td class="etat en-cours">En cours d’acquisition</td>
+                        <td>
+                            <ul>
+                            <li>Je communique mais pas toujours clairement</li>
+                            <li>Comptes rendus incomplets ou peu fréquents</li>
+                            <li>Présentations peu adaptées au public</li>
+                            </ul>
+                        </td>
+                        </tr>
+
+                        <tr>
+                        <td class="etat acquis">Acquis</td>
+                        <td>
+                            <ul>
+                            <li>Communication régulière, claire et pertinente</li>
+                            <li>Comptes rendus structurés après chaque réunion</li>
+                            <li>Présentations adaptées au niveau des interlocuteurs</li>
+                            </ul>
+                        </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div> 
+        </div>
+    </div>
+
+    <div id="c6" class="overlay">
+        <div class="overlay-content">
+            <span class="close" onclick="closeOverlay('c6')">&times;</span>
+            <h2>Compétence 6 — (à compléter)</h2>
+            <h3>Onglet : Apprentissage critique</h3>
+            <p>Tu pourras ajouter ici les points de la sixième compétence.</p>
+        </div>
+    </div>
+
+</body>
+</html>
