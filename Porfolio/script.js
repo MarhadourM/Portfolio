@@ -7,7 +7,7 @@ function openOverlay(id) {
     overlay.querySelectorAll('.tabcontent').forEach(tab => tab.style.display = 'none');
 
     // Ouvre l’onglet par défaut (ex: ac0)
-    const defaultTab = overlay.querySelector('#resume');
+    const defaultTab = overlay.querySelector('#resume_'+id);
     if (defaultTab) defaultTab.style.display = 'block';
 }
 
