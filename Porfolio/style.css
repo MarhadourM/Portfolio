@@ -247,4 +247,168 @@ main {
     flex-wrap: wrap;
     gap: 8px;
 }
+/* Overlay pour zoom image */
+.image-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-overlay img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+.close-image {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+/* Conteneur d'évaluation */
+.evaluation-container {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 25px;
+    border-radius: 12px;
+    margin: 20px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.evaluation-container h4 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+/* Container du slider */
+.slider-container {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 8px;
+}
+
+/* Slider personnalisé */
+.evaluation-slider {
+    width: 100%;
+    height: 8px;
+    border-radius: 5px;
+    background: linear-gradient(to right, 
+        #e74c3c 0%, 
+        #e74c3c 20%,
+        #f39c12 20%,
+        #f39c12 40%,
+        #3498db 40%,
+        #3498db 60%,
+        #2ecc71 60%,
+        #2ecc71 80%,
+        #27ae60 80%,
+        #27ae60 100%
+    );
+    outline: none;
+    -webkit-appearance: none;
+    margin: 20px 0;
+}
+
+/* Curseur (thumb) pour Chrome/Safari */
+.evaluation-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: white;
+    border: 3px solid #667eea;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease;
+}
+
+.evaluation-slider::-webkit-slider-thumb:hover {
+    transform: scale(1.2);
+}
+
+/* Curseur (thumb) pour Firefox */
+.evaluation-slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: white;
+    border: 3px solid #667eea;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease;
+}
+
+.evaluation-slider::-moz-range-thumb:hover {
+    transform: scale(1.2);
+}
+
+/* Labels des positions */
+.slider-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    position: relative;
+}
+
+.label-position {
+    font-size: 0.85em;
+    color: #555;
+    font-weight: 600;
+    text-align: center;
+    flex: 1;
+}
+
+.label-position.pos-1 { color: #e74c3c; }
+.label-position.pos-3 { color: #3498db; }
+.label-position.pos-5 { color: #27ae60; }
+
+/* Résultat de l'évaluation */
+.evaluation-result {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.result-badge {
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 1.1em;
+    background: #3498db;
+    color: white;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+/* Couleurs selon la position */
+.result-badge.non-acquis {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+}
+
+.result-badge.en-cours-debut {
+    background: linear-gradient(135deg, #f39c12, #e67e22);
+}
+
+.result-badge.en-cours {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+}
+
+.result-badge.en-cours-avance {
+    background: linear-gradient(135deg, #2ecc71, #27ae60);
+}
+
+.result-badge.acquis {
+    background: linear-gradient(135deg, #27ae60, #229954);
+}
 
