@@ -277,7 +277,7 @@ main {
 }
 /* Conteneur d'évaluation */
 .evaluation-container {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
     padding: 25px;
     border-radius: 12px;
     margin: 20px 0;
@@ -319,34 +319,46 @@ main {
     margin: 20px 0;
 }
 
-/* Curseur (thumb) pour Chrome/Safari */
+/* Curseur rectangulaire pour Chrome/Safari */
 .evaluation-slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
+    width: 40px;
+    height: 30px;
+    border-radius: 8px;
     background: white;
     border: 3px solid #667eea;
     cursor: pointer;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-    transition: transform 0.2s ease;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .evaluation-slider::-webkit-slider-thumb:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
 }
 
-/* Curseur (thumb) pour Firefox */
+/* Curseur rectangulaire pour Firefox */
 .evaluation-slider::-moz-range-thumb {
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
+    width: 40px;
+    height: 30px;
+    border-radius: 8px;
     background: white;
     border: 3px solid #667eea;
     cursor: pointer;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-    transition: transform 0.2s ease;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.evaluation-slider::-moz-range-thumb:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Track pour Firefox (pour centrer correctement) */
+.evaluation-slider::-moz-range-track {
+    background: transparent;
+    border: none;
 }
 
 .evaluation-slider::-moz-range-thumb:hover {
@@ -405,7 +417,7 @@ main {
 }
 
 .result-badge.en-cours-avance {
-    background: linear-gradient(135deg, #2ecc71, #27ae60);
+    background: linear-gradient(135deg, #88e4ae, #41d47e);
 }
 
 .result-badge.acquis {

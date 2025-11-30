@@ -1,59 +1,90 @@
-// --- Gestion des overlays ---
+
+
+// --- Overlay unique "competences" ---
 function openOverlay(id) {
     const overlay = document.getElementById(id);
     overlay.style.display = "flex";
 
-    // Ferme tous les onglets
-    overlay.querySelectorAll('.tabcontent').forEach(tab => tab.style.display = 'none');
+    // Afficher la première compétence et son premier AC
+    const allCompetences = overlay.querySelectorAll('.competence-content');
+    allCompetences.forEach(c => c.style.display = 'none');
 
-    // Ouvre l’onglet par défaut (ex: ac0)
-    const defaultTab = overlay.querySelector('#resume_'+id);
-    if (defaultTab) defaultTab.style.display = 'block';
+    const firstCompetence = overlay.querySelector('.competence-content');
+    if (firstCompetence) {
+        firstCompetence.style.display = 'block';
+
+        const acs = firstCompetence.querySelectorAll('.tabcontent');
+        acs.forEach(ac => ac.style.display = 'none');
+        const firstAC = firstCompetence.querySelector('.tabcontent');
+        if (firstAC) firstAC.style.display = 'block';
+    }
+
+    // Activer le premier onglet compétence visuellement
+    const compTabs = overlay.querySelectorAll('.tablink-competence');
+    compTabs.forEach((t, i) => t.classList.toggle('active', i === 0));
 }
 
 function closeOverlay(id) {
     document.getElementById(id).style.display = "none";
 }
 
-// --- Gestion des onglets ---
-function openTab(evt, tabId) {
+// --- Onglets de compétences (niveau 1) ---
+function openCompetence(evt, competenceId) {
     const overlay = evt.target.closest('.overlay-content');
-    const contents = overlay.querySelectorAll('.tabcontent');
-    contents.forEach(c => c.style.display = 'none');
-    overlay.querySelector('#' + tabId).style.display = 'block';
+
+    // Masquer toutes les compétences
+    overlay.querySelectorAll('.competence-content').forEach(c => c.style.display = 'none');
+    // Retirer active des onglets
+    overlay.querySelectorAll('.tablink-competence').forEach(btn => btn.classList.remove('active'));
+
+    // Afficher la compétence sélectionnée
+    const comp = overlay.querySelector('#' + competenceId);
+    if (comp) {
+        comp.style.display = 'block';
+        evt.currentTarget.classList.add('active');
+
+        // Afficher son premier AC
+        const acs = comp.querySelectorAll('.tabcontent');
+        acs.forEach(ac => ac.style.display = 'none');
+        const firstAC = comp.querySelector('.tabcontent');
+        if (firstAC) firstAC.style.display = 'block';
+    }
 }
 
-// ...existing code...
+// --- Onglets AC (niveau 2, local à la compétence visible) ---
+function openTab(evt, tabId) {
+    const competence = evt.target.closest('.competence-content');
+    if (!competence) return;
 
-// Gestion des sliders d'évaluation
+    competence.querySelectorAll('.tabcontent').forEach(c => c.style.display = 'none');
+    const target = competence.querySelector('#' + tabId);
+    if (target) target.style.display = 'block';
+}
+
+// --- Sliders d'évaluation ---
 document.addEventListener('DOMContentLoaded', function() {
     const sliders = document.querySelectorAll('.evaluation-slider');
-    
+
     sliders.forEach(slider => {
+        slider.setAttribute('step', '1');
         const resultId = slider.id.replace('slider_', 'result_');
         const resultElement = document.getElementById(resultId);
-        
-        if (resultElement) {
-            // Initialiser l'affichage
-            updateEvaluationResult(slider.value, resultElement);
-            
-            // Écouter les changements
-            slider.addEventListener('input', function() {
-                updateEvaluationResult(this.value, resultElement);
-            });
-        }
+        if (!resultElement) return;
+
+        updateEvaluationResult(slider.value, resultElement);
+        slider.addEventListener('input', function() {
+            updateEvaluationResult(this.value, resultElement);
+        });
     });
 });
 
 function updateEvaluationResult(value, resultElement) {
     const badge = resultElement.querySelector('.result-badge');
-    const intValue = parseInt(value);
-    
-    // Retirer toutes les classes
+    if (!badge) return;
+    const intValue = parseInt(value, 10);
     badge.className = 'result-badge';
-    
-    // Appliquer la classe et le texte selon la valeur
-    switch(intValue) {
+
+    switch (intValue) {
         case 1:
             badge.classList.add('non-acquis');
             badge.textContent = 'Non acquis';
@@ -76,3 +107,25 @@ function updateEvaluationResult(value, resultElement) {
             break;
     }
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    const sliders = document.querySelectorAll('.evaluation-slider');
+    
+    sliders.forEach(slider => {
+        // Ajouter l'attribut step pour "snapper" aux positions
+        slider.setAttribute('step', '1');
+        
+        const resultId = slider.id.replace('slider_', 'result_');
+        const resultElement = document.getElementById(resultId);
+        
+        if (resultElement) {
+            // Initialiser l'affichage
+            updateEvaluationResult(slider.value, resultElement);
+            
+            // Écouter les changements
+            slider.addEventListener('input', function() {
+                updateEvaluationResult(this.value, resultElement);
+            });
+        }
+    });
+});
