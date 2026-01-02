@@ -72,6 +72,25 @@
             color: var(--couleur-accent);
         }
 
+        .bouton-lien {
+            background: var(--fond-principal);
+            border: none;
+            cursor: pointer;
+            padding: 0.6rem 1.2rem;
+            border-radius: 1.2rem;
+            font-size: 0.7rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            color: var(--texte-noir);
+            transition: all 0.3s ease;
+            box-shadow: 4px 4px 10px var(--ombre-sombre), -4px -4px 10px var(--ombre-claire);
+        }
+
+        .bouton-lien.actif {
+            box-shadow: inset 4px 4px 8px var(--ombre-sombre);
+            color: var(--couleur-accent);
+        }
+
         .logo-mm {
             width: 55px;
             height: 55px;
@@ -88,6 +107,10 @@
             border: 2px solid rgba(124, 58, 237, 0.1);
             margin: 0 1.5rem;
             transition: transform 0.3s ease;
+        }
+
+        .logo-mm:has(a.actif) {
+            box-shadow: inset 4px 4px 8px var(--ombre-sombre), inset -4px -4px 8px var(--ombre-claire);
         }
 
         /* --- NAVIGATION SEMESTRES --- */
@@ -123,6 +146,14 @@
             margin: 0 auto;
             animation: fadeIn 0.5s ease-out;
         }
+         .bloc-3d {
+            background: var(--fond-principal);
+            border-radius: 2.5rem;
+            padding: 3rem;
+            box-shadow: 12px 12px 24px var(--ombre-sombre), -12px -12px 24px var(--ombre-claire);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
 
         @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
 
@@ -349,4 +380,35 @@
 }
 a{
     text-decoration: none;
- }
+    color: inherit;
+}
+
+a:visited {
+    color: inherit;
+}
+
+/* --- PAGE MOI  --- */
+
+.grille-moi {
+            display: grid;
+            grid-template-columns: 320px 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .photo-cadre {
+            padding: 1rem;
+            background: var(--fond-principal);
+            border-radius: 2.5rem;
+            box-shadow: 10px 10px 20px var(--ombre-sombre);
+        }
+
+        .photo-img {
+            width: 100%;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            border-radius: 1.8rem;
+        }
+
+        .bio-titre { font-size: 2.2rem; font-weight: 900; margin-bottom: 1.5rem; font-style: italic; }
+        .bio-texte { font-size: 1.1rem; opacity: 0.8; margin-bottom: 2rem; }
