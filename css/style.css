@@ -337,3 +337,16 @@
             .tableau-autoeval { grid-template-columns: 1fr; }
             .groupe-boutons-contact { gap: 1.5rem; }
         }
+
+.footer-text{
+    text-align: center;
+    padding: 5rem 0;
+    opacity: 0.3;
+    font-size: 0.6rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+}
+a{
+    text-decoration: none;
+ }

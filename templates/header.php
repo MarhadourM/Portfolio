@@ -9,17 +9,14 @@
 <body>
     <nav class="barre-navigation">
         <div class="groupe-liens">
-            <button onclick="allerVers('competences')" id="nav-competences" class="bouton-menu actif">Compétences</button>
-            <button onclick="allerVers('projets')" id="nav-projets" class="bouton-menu">Projets</button>
+            <a href="competences" class="bouton-menu actif">Compétences</a>
+            <a href="projets" class="bouton-menu">Projets</a>
         </div>
 
-        <div class="logo-mm" onclick="allerVers('competences')">MM</div>
+        <div class="logo-mm"><a href="home">MM</a></div>
 
         <div class="groupe-liens">
-            <button onclick="allerVers('parcours')" id="nav-parcours" class="bouton-menu">Parcours</button>
-            <button onclick="allerVers('contact')" id="nav-contact" class="bouton-menu">Contact</button>
+            <a href="parcours" class="bouton-menu">Parcours</a>
+            <a href="contact" class="bouton-menu">Contact</a>
         </div>
     </nav>
-
-</body>
-</html>

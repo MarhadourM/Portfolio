@@ -1,15 +1,7 @@
 let semestreActif = 3;
         let skillActif = 1;
 
-        function allerVers(pageId) {
-            document.querySelectorAll('.page-conteneur').forEach(p => p.classList.add('cache'));
-            document.getElementById('page-' + pageId).classList.remove('cache');
 
-            document.querySelectorAll('.bouton-menu').forEach(b => b.classList.remove('actif'));
-            const b = document.getElementById('nav-' + pageId);
-            if(b) b.classList.add('actif');
-            window.scrollTo({top: 0, behavior: 'smooth'});
-        }
 
         function changerSemestre(num) {
             semestreActif = num;
