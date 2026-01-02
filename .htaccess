@@ -1,0 +1,11 @@
+# 1. Empêcher l'affichage du contenu des dossiers
+Options -Indexes
+
+# 2. Gestion des erreurs (Redirige vers la page d'accueil si page non trouvée)
+ErrorDocument 404 /index.html
+
+# 3. Réécriture d'URL pour enlever le .html (Optionnel mais plus propre)
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [NC,L]
