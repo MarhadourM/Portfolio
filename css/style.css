@@ -91,6 +91,24 @@
             color: var(--couleur-accent);
         }
 
+        .bouton-lien-github {
+            text-decoration: none;
+            background: var(--fond-principal);
+            padding: 0.6rem 1.2rem;
+            border-radius: 1.2rem;
+            font-size: 0.7rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            color: var(--texte-noir);
+            box-shadow: 4px 4px 10px var(--ombre-sombre), -4px -4px 10px var(--ombre-claire);
+            transition: all 0.3s ease;
+            display: inline-block;
+            display:block; 
+            text-align:center; 
+            margin-top:1.5rem; 
+            text-decoration:none;
+        }
+
         .logo-mm {
             width: 55px;
             height: 55px;
@@ -295,7 +313,8 @@
             box-shadow: 0 0 10px var(--ombre-sombre);
         }
         .date-etape { font-size: 0.7rem; font-weight: 900; color: var(--texte-lavande); text-transform: uppercase; }
-
+        .formation { font-size: 1.2rem; font-weight: 900; margin-top: 0.5rem; }
+        .description-formation { font-size: 0.9rem; margin-top: 0.5rem; opacity: 0.8; }
         /* --- CONTACT (CORRECTION DU CSS) --- */
         .centre-contact {
             text-align: center;
