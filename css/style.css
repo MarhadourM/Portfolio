@@ -315,7 +315,7 @@
         .date-etape { font-size: 0.7rem; font-weight: 900; color: var(--texte-lavande); text-transform: uppercase; }
         .formation { font-size: 1.2rem; font-weight: 900; margin-top: 0.5rem; }
         .description-formation { font-size: 0.9rem; margin-top: 0.5rem; opacity: 0.8; }
-        /* --- CONTACT (CORRECTION DU CSS) --- */
+        /* --- CONTACT  --- */
         .centre-contact {
             text-align: center;
             display: flex;
@@ -352,10 +352,19 @@
             transform: translateY(-8px);
             box-shadow: 12px 12px 24px var(--ombre-sombre), -12px -12px 24px var(--ombre-claire);
         }
+        .reseaux-sociaux{
+             display: flex; gap: 2.5rem; justify-content: center; margin-top: 2rem;
+        }
 
         .bouton-mail i, .bouton-linkedin i { font-size: 2.5rem; color: var(--couleur-accent); }
         .label-bouton { font-size: 0.7rem; font-weight: 900; text-transform: uppercase; color: var(--texte-noir); letter-spacing: 0.1em; }
-
+        .bloc-contact {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 3rem;
+        }
         /* --- MODALE --- */
         .modale-preuve {
             display: none;

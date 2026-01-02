@@ -1,4 +1,4 @@
-<section id="page-parcours" class="conteneur-page masque">
+<section id="page-parcours" class="page-conteneur">
             <h2 class="grand-titre">Mon <span class="accent">Cursus</span></h2>
             <div class="bloc-3d">
                 <div class="timeline-container">
