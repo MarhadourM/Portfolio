@@ -440,3 +440,97 @@ a:visited {
 
         .bio-titre { font-size: 2.2rem; font-weight: 900; margin-bottom: 1.5rem; font-style: italic; }
         .bio-texte { font-size: 1.1rem; opacity: 0.8; margin-bottom: 2rem; }
+
+/* Pages comptences */
+
+.mise-en-page-competences {
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 3rem;
+        }
+
+        .onglets-semestres {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .bouton-semestre {
+            background: var(--fond-principal);
+            border: none;
+            padding: 0.6rem 2rem;
+            border-radius: 1rem;
+            font-weight: 900;
+            cursor: pointer;
+            box-shadow: 6px 6px 12px var(--ombre-sombre);
+            transition: 0.3s;
+        }
+
+        .bouton-semestre.actif { box-shadow: inset 4px 4px 8px var(--ombre-sombre); color: var(--couleur-accent); }
+
+        .menu-competences { display: flex; flex-direction: column; gap: 1rem; }
+
+        .bouton-skill {
+            width: 100%;
+            text-align: left;
+            padding: 1.4rem;
+            border-radius: 1.5rem;
+            background: var(--fond-principal);
+            border: none;
+            cursor: pointer;
+            font-weight: 700;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 6px 6px 12px var(--ombre-sombre);
+            transition: 0.3s;
+        }
+
+        .bouton-skill.actif { box-shadow: inset 5px 5px 10px var(--ombre-sombre); color: var(--couleur-accent); }
+         /* --- BILAN STATUT --- */
+        .grille-bilan {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .cellule-statut {
+            background: var(--fond-principal);
+            box-shadow: inset 4px 4px 8px var(--ombre-sombre);
+            border-radius: 1.5rem;
+            padding: 1.5rem;
+            border-top: 5px solid transparent;
+        }
+
+        .statut-non { border-color: var(--rouge-erreur); }
+        .statut-cours { border-color: var(--ambre-alerte); }
+        .statut-acquis { border-color: var(--vert-succes); }
+
+        /* --- STATUT BILAN --- */
+        .statut-label {
+            font-size: 0.6rem;
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+
+        .statut-items {
+            font-size: 0.8rem;
+            margin-top: 1rem;
+            font-style: italic;
+            list-style: none;
+        }
+
+        .statut-label-non {
+            color: var(--rouge-erreur);
+        }
+
+        .statut-label-cours {
+            color: var(--ambre-alerte);
+        }
+
+        .statut-label-acquis {
+            color: var(--vert-succes);
+        }
+      

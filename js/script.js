@@ -1,37 +1,38 @@
 let semestreActif = 3;
         let skillActif = 1;
 
-
-
-        function changerSemestre(num) {
+        function setSemestre(num) {
             semestreActif = num;
+            skillActif = 1;  // Réinitialise la compétence à 1
             document.querySelectorAll('.bouton-semestre').forEach(b => b.classList.remove('actif'));
             const btn = document.getElementById('btn-s' + num);
             if(btn) btn.classList.add('actif');
+            document.querySelectorAll('.bouton-skill').forEach(b => b.classList.remove('actif'));
+            const tab = document.getElementById('tab-1');
+            if(tab) tab.classList.add('actif');
             rafraichirAffichageCompetence();
         }
 
-        function ongletSkill(num) {
+        function setSkill(num) {
             skillActif = num;
-            document.querySelectorAll('.bouton-sidebar').forEach(b => b.classList.remove('actif'));
+            document.querySelectorAll('.bouton-skill').forEach(b => b.classList.remove('actif'));
             const tab = document.getElementById('tab-' + num);
             if(tab) tab.classList.add('actif');
             rafraichirAffichageCompetence();
         }
 
         function rafraichirAffichageCompetence() {
-            // Masquer tous les panels qui commencent par "panel-S"
-            document.querySelectorAll('.carte-competence').forEach(p => {
-                if (p.id.startsWith('panel-S')) p.classList.add('cache');
+            // Masquer tous les panels
+            document.querySelectorAll('[id^="panel-S"]').forEach(p => {
+                p.style.display = 'none';
             });
 
             // Afficher le panel correspondant à la combinaison Semestre + Compétence
             const idCible = `panel-S${semestreActif}-${skillActif}`;
             const target = document.getElementById(idCible);
             if (target) {
-                target.classList.remove('cache');
+                target.style.display = 'block';
             } else {
-                // Optionnel : afficher un message "Contenu non disponible" si le panel n'existe pas encore
                 console.log("Panel non défini : " + idCible);
             }
         }
