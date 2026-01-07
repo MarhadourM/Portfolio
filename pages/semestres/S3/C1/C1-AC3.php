@@ -1,0 +1,29 @@
+<div id="panel-S3-C1-AC3" class="ac-tableau">
+    <h3 class="accent" style="margin-bottom:1.5rem;">AC3 : Conception & bonnes pratiques</h3>
+    <div class="grille-bilan">
+        <div class="cellule-statut statut-non">
+            <span class="statut-label statut-label-non">Non Acquis</span>
+            <ul class="statut-items">
+                <li>Code confus, non documenté</li>
+                <li>Nom des variables peu clairs</li>
+                <li>Pas de découpage logique → tout dans un seul fichier</li>
+            </ul>
+        </div>
+        <div class="cellule-statut statut-cours">
+            <span class="statut-label statut-label-cours">En cours d'acquisition</span>
+            <ul class="statut-items">
+                <li>Architecture présente mais améliorable</li>
+                <li>Quelques commentaires et conventions respectées</li>
+                <li>Git utilisé mais désorganisé (commits flous)</li>
+            </ul>
+        </div>
+        <div class="cellule-statut statut-acquis">
+            <span class="statut-label statut-label-acquis">Acquis</span>
+            <ul class="statut-items">
+                <li>Architecture propre (séparation des responsabilités)</li>
+                <li>Code propre et lisible, documentation utile</li>
+                <li>Git avec bonnes pratiques : branches, messages clairs</li>
+            </ul>
+        </div>
+    </div>
+</div>

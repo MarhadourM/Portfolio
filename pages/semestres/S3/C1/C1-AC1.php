@@ -1,0 +1,29 @@
+<div id="panel-S3-C1-AC1" class="ac-tableau">
+    <h3 class="accent" style="margin-bottom:1.5rem;">AC1 : Élaborer & implémenter les spécifications</h3>
+    <div class="grille-bilan">
+        <div class="cellule-statut statut-non">
+            <span class="statut-label statut-label-non">Non Acquis</span>
+            <ul class="statut-items">
+                <li>Exigences non comprises ou mal interprétées</li>
+                <li>Manque de documents (pas de user stories, cas d'utilisation…)</li>
+                <li>Fonctionnalités absentes par rapport au besoin client</li>
+            </ul>
+        </div>
+        <div class="cellule-statut statut-cours">
+            <span class="statut-label statut-label-cours">En cours d'acquisition</span>
+            <ul class="statut-items">
+                <li>Spécifications partielles</li>
+                <li>Critères d'acceptation incomplets ou peu exploitables</li>
+                <li>Certaines contraintes non fonctionnelles oubliées (perf., sécu…)</li>
+            </ul>
+        </div>
+        <div class="cellule-statut statut-acquis">
+            <span class="statut-label statut-label-acquis">Acquis</span>
+            <ul class="statut-items">
+                <li>Spécifications complètes et structurées</li>
+                <li>Besoins utilisateurs et techniques clairement traduits</li>
+                <li>Critères d'acceptation validés par les tests</li>
+            </ul>
+        </div>
+    </div>
+</div>

@@ -488,6 +488,13 @@ a:visited {
         }
 
         .bouton-skill.actif { box-shadow: inset 5px 5px 10px var(--ombre-sombre); color: var(--couleur-accent); }
+        
+        /* Classe pour les AC */
+        .ac-tableau {
+            margin-bottom: 2rem;
+            padding: 1rem;
+        }
+        
          /* --- BILAN STATUT --- */
         .grille-bilan {
             display: grid;
@@ -516,10 +523,10 @@ a:visited {
         }
 
         .statut-items {
-            font-size: 0.8rem;
+            font-size: 1rem;
             margin-top: 1rem;
             font-style: italic;
-            list-style: none;
+            padding-left: 10px;
         }
 
         .statut-label-non {
@@ -533,4 +540,67 @@ a:visited {
         .statut-label-acquis {
             color: var(--vert-succes);
         }
+ /* --- TABLEAU DE PREUVES --- */
+        .titre-section-preuves {
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-size: 0.85rem;
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
+            color: var(--texte-lavande);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .tableau-preuves {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0 1rem;
+        }
+
+        .ligne-preuve {
+            background: var(--fond-principal);
+            box-shadow: 4px 4px 10px var(--ombre-sombre), -4px -4px 10px var(--ombre-claire);
+            border-radius: 1rem;
+            transition: transform 0.2s ease;
+        }
+
+        .ligne-preuve:hover {
+            transform: scale(1.01);
+        }
+
+        .ligne-preuve td {
+            padding: 1rem;
+            font-size: 0.85rem;
+        }
+
+        .cellule-ac {
+            font-weight: 900;
+            color: var(--couleur-accent);
+            width: 100px;
+        }
+
+        .cellule-description {
+            font-weight: 600;
+            opacity: 0.8;
+        }
+
+        .bouton-apercu {
+            background: var(--fond-principal);
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 0.8rem;
+            cursor: pointer;
+            box-shadow: 4px 4px 8px var(--ombre-sombre);
+            color: var(--couleur-accent);
+            font-size: 1rem;
+            transition: 0.2s;
+        }
+
+        .bouton-apercu:active {
+            box-shadow: inset 2px 2px 5px var(--ombre-sombre);
+        }
+
       

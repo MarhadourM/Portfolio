@@ -19,7 +19,7 @@
                 </aside>
 
                 <div id="contenu-dynamique">
-                    <?php include 'semestres/S3.php'; ?>
+                    <?php include 'semestres/S3/S3.php'; ?>
                     <?php include 'semestres/S4.php'; ?>
                     <?php include 'semestres/S5.php'; ?>
                     <?php include 'semestres/S6.php'; ?>

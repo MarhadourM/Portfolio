@@ -22,18 +22,25 @@ let semestreActif = 3;
         }
 
         function rafraichirAffichageCompetence() {
-            // Masquer tous les panels
-            document.querySelectorAll('[id^="panel-S"]').forEach(p => {
-                p.style.display = 'none';
-            });
+            // Masquer TOUS les panels principaux (panel-S3-1, S3-2, etc)
+            // pas les AC enfants
+            for (let s = 3; s <= 6; s++) {
+                for (let c = 1; c <= 6; c++) {
+                    const panel = document.getElementById(`panel-S${s}-${c}`);
+                    if (panel) {
+                        panel.style.display = 'none';
+                    }
+                }
+            }
 
-            // Afficher le panel correspondant à la combinaison Semestre + Compétence
-            const idCible = `panel-S${semestreActif}-${skillActif}`;
-            const target = document.getElementById(idCible);
-            if (target) {
-                target.style.display = 'block';
-            } else {
-                console.log("Panel non défini : " + idCible);
+            // Afficher le panel principal de la compétence active
+            const panelPrincipal = document.getElementById(`panel-S${semestreActif}-${skillActif}`);
+            if (panelPrincipal) {
+                panelPrincipal.style.display = 'block';
+                // Afficher aussi tous les AC enfants
+                panelPrincipal.querySelectorAll('[id^="panel-S"]').forEach(ac => {
+                    ac.style.display = 'block';
+                });
             }
         }
 
@@ -50,5 +57,12 @@ let semestreActif = 3;
 
         // Initialisation au chargement
         window.onload = () => {
-            rafraichirAffichageCompetence();
+            setTimeout(() => {
+                rafraichirAffichageCompetence();
+            }, 100);
         };
+        
+        // Appel immédiat si DOM est déjà chargé
+        document.addEventListener('DOMContentLoaded', () => {
+            rafraichirAffichageCompetence();
+        });
