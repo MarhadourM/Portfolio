@@ -26,4 +26,17 @@
             </ul>
         </div>
     </div>
+
+
+    <table class="tableau-preuves preuve-acquis">
+        <tr class="ligne-preuve">
+            <td class="cellule-ressources"></td>
+            <td class="cellule-description">Description</td>
+            <td style="text-align:right;">
+                <button class="bouton-apercu" onclick="ouvrirImage('/Portfolio/assets/img/')">
+                    <i class="fas fa-eye"> Preuve</i>
+                </button>
+            </td>
+        </tr>
+    </table>
 </div>

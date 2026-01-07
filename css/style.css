@@ -560,6 +560,31 @@ a:visited {
             border-spacing: 0 1rem;
         }
 
+        /* Bordures colorées pour les preuves selon le statut */
+        .tableau-preuves.preuve-non {
+            border-right: 5px solid var(--rouge-erreur);
+            border-left: 5px solid var(--rouge-erreur);
+            border-radius: 10px;
+            padding-right: 1rem;
+            padding-left: 1rem;
+        }
+
+        .tableau-preuves.preuve-cours {
+            border-right: 5px solid var(--ambre-alerte);
+            border-left: 5px solid var(--ambre-alerte);
+            border-radius: 10px;
+            padding-right: 1rem;
+            padding-left: 1rem;
+        }
+
+        .tableau-preuves.preuve-acquis {
+            border-right: 5px solid var(--vert-succes);
+            border-left: 5px solid var(--vert-succes);
+            border-radius: 10px;
+            padding-right: 1rem;
+            padding-left: 1rem;
+        }
+
         .ligne-preuve {
             background: var(--fond-principal);
             box-shadow: 4px 4px 10px var(--ombre-sombre), -4px -4px 10px var(--ombre-claire);
@@ -576,7 +601,7 @@ a:visited {
             font-size: 0.85rem;
         }
 
-        .cellule-ac {
+        .cellule-ressources {
             font-weight: 900;
             color: var(--couleur-accent);
             width: 100px;
