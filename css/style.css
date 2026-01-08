@@ -459,9 +459,10 @@ a:visited {
         .bouton-semestre {
             background: var(--fond-principal);
             border: none;
-            padding: 0.6rem 2rem;
+            padding: 1rem 2.5rem;
             border-radius: 1rem;
             font-weight: 900;
+            font-size: 1.1rem;
             cursor: pointer;
             box-shadow: 6px 6px 12px var(--ombre-sombre);
             transition: 0.3s;
@@ -474,12 +475,13 @@ a:visited {
         .bouton-skill {
             width: 100%;
             text-align: left;
-            padding: 1.4rem;
+            padding: 2rem 1.8rem;
             border-radius: 1.5rem;
             background: var(--fond-principal);
             border: none;
             cursor: pointer;
             font-weight: 700;
+            font-size: 1rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -626,6 +628,36 @@ a:visited {
 
         .bouton-apercu:active {
             box-shadow: inset 2px 2px 5px var(--ombre-sombre);
+        }
+
+        /* --- BLOC DESCRIPTION COMPÉTENCE --- */
+        .espace-competence {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .bloc-description {
+            background: var(--fond-principal);
+            border-radius: 2.5rem;
+            padding: 3rem;
+            box-shadow: 12px 12px 24px var(--ombre-sombre), -12px -12px 24px var(--ombre-claire);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            animation: fadeIn 0.5s ease-out;
+        }
+
+        .titre-description {
+            font-size: 2rem;
+            font-weight: 900;
+            color: var(--couleur-accent);
+            margin-bottom: 1rem;
+        }
+
+        .texte-description {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            opacity: 0.9;
+            color: var(--texte-noir);
         }
 
       
