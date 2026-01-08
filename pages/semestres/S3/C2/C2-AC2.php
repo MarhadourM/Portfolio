@@ -29,7 +29,7 @@
     <table class="tableau-preuves">
         <tr class="ligne-preuve">
             <td class="cellule-ressources"></td>
-            <td class="cellule-description">Description</td>
+            <td class="cellule-description">Dev efficace</td>
             <td style="text-align:right;">
                 <button class="bouton-apercu" onclick="ouvrirImage('/Portfolio/assets/img/')">
                     <i class="fas fa-eye"> Preuve</i>

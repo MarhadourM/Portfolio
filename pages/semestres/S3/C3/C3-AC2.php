@@ -12,7 +12,7 @@
         <div class="cellule-statut statut-cours">
             <span class="statut-label statut-label-cours">En cours d'acquisition</span>
             <ul class="statut-items">
-                <li>Déploiement réussi mais procédure manuelle et non automatisée</li>
+                <li>Déploiement réussi mais procédure manuelle et erreurs basiques</li>
                 <li>Configuration basique du serveur</li>
                 <li>Accès à distance fonctionnel mais sans optimisation</li>
             </ul>
@@ -20,16 +20,16 @@
         <div class="cellule-statut statut-acquis">
             <span class="statut-label statut-label-acquis">Acquis</span>
             <ul class="statut-items">
-                <li>Déploiement automatisé (Docker, scripts, IaC) et reproductible</li>
+                <li>Déploiement </li>
                 <li>Configuration du serveur documentée et optimisée</li>
                 <li>Service accessible et performant en production</li>
             </ul>
         </div>
     </div>
-    <table class="tableau-preuves">
+    <table class="tableau-preuves preuve-acquis">
         <tr class="ligne-preuve">
-            <td class="cellule-ressources"></td>
-            <td class="cellule-description">Description</td>
+            <td class="cellule-ressources">SAE</td>
+            <td class="cellule-description">Deploiement de notre produit fini sur serveur</td>
             <td style="text-align:right;">
                 <button class="bouton-apercu" onclick="ouvrirImage('/Portfolio/assets/img/')">
                     <i class="fas fa-eye"> Preuve</i>
