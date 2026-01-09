@@ -26,12 +26,12 @@
             </ul>
         </div>
     </div>
-    <table class="tableau-preuves preuve-acquis">
+    <table class="tableau-preuves preuve-cours">
         <tr class="ligne-preuve">
             <td class="cellule-ressources">R3.06 Archi Reseaux</td>
-            <td class="cellule-description">Description</td>
+            <td class="cellule-description">Deploiement sécurisé reseaux</td>
             <td style="text-align:right;">
-                <button class="bouton-apercu" onclick="ouvrirImage('/Portfolio/assets/img/')">
+                <button class="bouton-apercu" onclick="ouvrirImage('/Portfolio/assets/img/gns3.jpg')">
                     <i class="fas fa-eye"> Preuve</i>
                 </button>
             </td>
