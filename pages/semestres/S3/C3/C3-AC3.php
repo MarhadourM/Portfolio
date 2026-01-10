@@ -29,7 +29,7 @@
     <table class="tableau-preuves preuve-cours">
         <tr class="ligne-preuve">
             <td class="cellule-ressources">R3.06 Archi Reseaux</td>
-            <td class="cellule-description">Deploiement sécurisé reseaux</td>
+            <td class="cellule-description">Securisation grâce a Iptables</td>
             <td style="text-align:right;">
                 <button class="bouton-apercu" onclick="ouvrirImage('/Portfolio/assets/img/gns3.jpg')">
                     <i class="fas fa-eye"> Preuve</i>
