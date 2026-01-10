@@ -26,14 +26,23 @@
             </ul>
         </div>
     </div>
-    <table class="tableau-preuves">
+    <table class="tableau-preuves preuve-acquis">
         <tr class="ligne-preuve">
-            <td class="cellule-ressources"></td>
-            <td class="cellule-description">Description</td>
+            <td class="cellule-ressources">SAE</td>
+            <td class="cellule-description"><strong>Cahier des charges</strong> - Estimation du temps nécessaire pour les maquettes pour avoir une planification réaliste</td>
             <td style="text-align:right;">
-                <button class="bouton-apercu" onclick="ouvrirImage('/Portfolio/assets/img/')">
+                <button class="bouton-apercu" onclick="ouvrirImage('/Portfolio/assets/img/planification.png')">
                     <i class="fas fa-eye"> Preuve</i>
                 </button>
+            </td>
+        </tr>
+    </table>
+    <table class="tableau-preuves preuve-acquis">
+        <tr class="ligne-preuve">
+            <td class="cellule-ressources">SAE</td>
+            <td class="cellule-description"><strong>Phase Développement</strong> - Reunion tous les matins avec l'équipe de sae pour mettre en commun l'avancement et les tâches à réaliser</td>
+            <td style="text-align:right;">
+                
             </td>
         </tr>
     </table>

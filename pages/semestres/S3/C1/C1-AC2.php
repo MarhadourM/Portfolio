@@ -28,8 +28,8 @@
     </div>
     <table class="tableau-preuves preuve-cours">
         <tr class="ligne-preuve">
-            <td class="cellule-ressources"></td>
-            <td class="cellule-description">SAE - Header + Recherche d'objet</td>
+            <td class="cellule-ressources">SAE</td>
+            <td class="cellule-description"><strong>Maquettes</strong> - Header + Recherche d'objet</td>
             <td style="text-align:right;">
                 <button class="bouton-apercu" onclick="ouvrirImage('/Portfolio/assets/img/ergonomie1.png')">
                     <i class="fas fa-eye"> Preuve</i>

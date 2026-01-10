@@ -29,7 +29,7 @@
     <table class="tableau-preuves preuve-acquis ">
         <tr class="ligne-preuve">
             <td class="cellule-ressources">SAE</td>
-            <td class="cellule-description">Création du model pour la SAE</td>
+            <td class="cellule-description"><strong>Phase Développement</strong> - Création du model pour la SAE</td>
             <td style="text-align:right;">
                 <button class="bouton-apercu" onclick="ouvrirImage('/Portfolio/assets/img/CRUD.png')">
                     <i class="fas fa-eye"> Preuve</i>

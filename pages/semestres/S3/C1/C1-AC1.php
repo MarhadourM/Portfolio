@@ -30,8 +30,8 @@
 
     <table class="tableau-preuves preuve-acquis">
         <tr class="ligne-preuve">
-            <td class="cellule-ressources"></td>
-            <td class="cellule-description">Cahier des charges de la SAE - exigences fonctionnelles</td>
+            <td class="cellule-ressources">SAE</td>
+            <td class="cellule-description"><strong>Cahier des charges</strong> - exigences fonctionnelles</td>
             <td style="text-align:right;">
                 <button class="bouton-apercu" onclick="ouvrirImage('/Portfolio/assets/img/exigences-fonctionnelles1.png')">
                     <i class="fas fa-eye"> Preuve</i>
@@ -41,8 +41,8 @@
     </table>
     <table class="tableau-preuves preuve-acquis">
         <tr class="ligne-preuve">
-            <td class="cellule-ressources"></td>
-            <td class="cellule-description">Cahier des charges de la SAE - architectures materielle</td>
+            <td class="cellule-ressources">SAE</td>
+            <td class="cellule-description"><strong>Cahier des charges</strong> - architectures materielle</td>
             <td style="text-align:right;">
                 <button class="bouton-apercu" onclick="ouvrirImage('/Portfolio/assets/img/exigences-non-fonctionnelles.png')">
                     <i class="fas fa-eye"> Preuve</i>

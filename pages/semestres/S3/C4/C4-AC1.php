@@ -29,7 +29,7 @@
     <table class="tableau-preuves preuve-acquis">
         <tr class="ligne-preuve">
             <td class="cellule-ressources">SAE</td>
-            <td class="cellule-description">Création de la base de donnée </td>
+            <td class="cellule-description"><strong>Phase BDD</strong>Création de la base de donnée </td>
             <td style="text-align:right;">
                 <button class="bouton-apercu" onclick="ouvrirImage('/Portfolio/assets/img/MLD.png')">
                     <i class="fas fa-eye">Preuve</i>

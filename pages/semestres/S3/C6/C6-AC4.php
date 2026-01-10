@@ -26,14 +26,11 @@
             </ul>
         </div>
     </div>
-    <table class="tableau-preuves">
+    <table class="tableau-preuves preuve-acquis">
         <tr class="ligne-preuve">
-            <td class="cellule-ressources"></td>
-            <td class="cellule-description">Description</td>
+            <td class="cellule-ressources">SAE</td>
+            <td class="cellule-description"><strong>Ensemble du projet</strong> - Repect mutelle dans le groupe, et Attitude professionnelle</td>
             <td style="text-align:right;">
-                <button class="bouton-apercu" onclick="ouvrirImage('/Portfolio/assets/img/')">
-                    <i class="fas fa-eye"> Preuve</i>
-                </button>
             </td>
         </tr>
     </table>

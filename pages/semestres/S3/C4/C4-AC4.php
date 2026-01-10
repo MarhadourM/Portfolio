@@ -29,7 +29,7 @@
     <table class="tableau-preuves preuve-acquis">
         <tr class="ligne-preuve">
             <td class="cellule-ressources">SAE</td>
-            <td class="cellule-description">Enregistrement du hash mots de passe utilisateurs </td>
+            <td class="cellule-description"><strong>Phase Développement</strong> - Enregistrement du hash mots de passe utilisateurs </td>
             <td style="text-align:right;">
                 <button class="bouton-apercu" onclick="ouvrirImage('/Portfolio/assets/img/mdp-hash.png')">
                     <i class="fas fa-eye"> Preuve</i>
