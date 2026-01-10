@@ -12,7 +12,12 @@
                         <p class="bio-texte">
                             Ce portfolio est le reflet de mon parcours académique et de mes projets personnels. Bienvenue dans mon univers numérique.
                         </p>
-                        <button onclick="naviguer('competences')" class="bouton-lien actif" style="padding:1.5rem 3rem; font-size: 0.9rem;">Voir mes compétences</button>
+                        <a href="competences" class="bouton-lien actif" style="padding:1.5rem 3rem; font-size: 0.9rem;">Voir mes compétences Universitaires</a>
+
+
+                        TODO ajouter  Competences pour recruteur 
+                         TODO ajouter  CV  & points faible pts fort
+
                     </div>
                 </div>
             </div>
