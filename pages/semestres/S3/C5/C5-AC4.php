@@ -26,14 +26,23 @@
             </ul>
         </div>
     </div>
-    <table class="tableau-preuves">
+    <table class="tableau-preuves preuve-acquis">
         <tr class="ligne-preuve">
-            <td class="cellule-ressources"></td>
-            <td class="cellule-description">Description</td>
+            <td class="cellule-ressources">SAE</td>
+            <td class="cellule-description"><strong>Cahier des charges</strong> - Consultation régulière du cahier des charges pour s'assurer de la conformité du site en  developpement</td>
             <td style="text-align:right;">
-                <button class="bouton-apercu" onclick="ouvrirImage('/Portfolio/assets/img/')">
+                
+            </td>
+        </tr>
+    </table>
+    <table class="tableau-preuves preuve-acquis">
+        <tr class="ligne-preuve">
+            <td class="cellule-ressources">SAE</td>
+            <td class="cellule-description"><strong>Soutenance</strong> - Consience de la qualite du produit et donc des eventuelles ameliorations</td>
+            <td style="text-align:right;">
+             <button class="bouton-apercu" onclick="ouvrirImage('/Portfolio/assets/img/amelioration.png')">
                     <i class="fas fa-eye"> Preuve</i>
-                </button>
+                </button>   
             </td>
         </tr>
     </table>

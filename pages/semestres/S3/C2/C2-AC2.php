@@ -29,7 +29,7 @@
     <table class="tableau-preuves preuve-acquis">
         <tr class="ligne-preuve">
         <td class="cellule-ressources">R3.02 Dev efficace</td>
-            <td class="cellule-description"> Methode</td>
+            <td class="cellule-description"> Création d'un methode adaptée</td>
             <td style="text-align:right;">
                 <button class="bouton-apercu" onclick="ouvrirImage('/Portfolio/assets/img/methode.png')">
                     <i class="fas fa-eye"> Preuve</i>

@@ -29,7 +29,7 @@
     <table class="tableau-preuves preuve-acquis">
         <tr class="ligne-preuve">
             <td class="cellule-ressources">SAE</td>
-            <td class="cellule-description">Utilisation des securités basiques</td>
+            <td class="cellule-description"><strong>Phase Développement</strong> - Utilisation des securités basiques</td>
             <td style="text-align:right;">
                 <button class="bouton-apercu" onclick="ouvrirImage('/Portfolio/assets/img/securite.png')">
                     <i class="fas fa-eye"> Preuve</i>
@@ -41,7 +41,7 @@
     <table class="tableau-preuves preuve-acquis">
         <tr class="ligne-preuve">
             <td class="cellule-ressources">SAE</td>
-            <td class="cellule-description">Verification des données rentrées</td>
+            <td class="cellule-description"><strong>Phase Développement</strong> - Verification des données rentrées</td>
             <td style="text-align:right;">
                 <button class="bouton-apercu" onclick="ouvrirImage('/Portfolio/assets/img/securite2.png')">
                     <i class="fas fa-eye"> Preuve</i>
