@@ -4,7 +4,7 @@
                 <div class="reseaux-sociaux">
                     <a href="mailto:matthieu.marhadour.etu@univ-lemans.fr" class="bouton-mail">
                         <i class="fas fa-envelope"></i>
-                        <span style="font-weight:900; font-size:0.7rem; text-transform:uppercase;">Email</span>
+                        <span class="email-texte">matthieu.marhadour.etu@univ-lemans.fr</span>
                     </a>
                     <a href="https://www.linkedin.com/in/matthieu-marhadour-b31281382/"  target="_blank" class="bouton-linkedin">
                         <i class="fab fa-linkedin-in"></i>
