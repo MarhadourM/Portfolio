@@ -555,6 +555,128 @@ a:visited {
   margin-bottom: 2rem;
 }
 
+/* --- ESPACE RECRUTEUR --- */
+.bouton-competences {
+  padding: 1.8rem 4rem;
+  font-size: 1rem;
+  letter-spacing: 0.15em;
+  font-weight: 900;
+}
+
+.espace-recruteur {
+  margin-top: 3rem;
+}
+
+.contenu-recruteur {
+  padding: 2rem;
+}
+
+.titre-recruteur {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.section-profil {
+  margin-bottom: 2.5rem;
+}
+
+.titre-section {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  color: var(--couleur-accent);
+}
+
+.bloc-description-profil {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  border-left: 4px solid var(--couleur-accent);
+}
+
+.texte-profil {
+  font-size: 1rem;
+  line-height: 1.8;
+  opacity: 0.95;
+}
+
+.texte-profil:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.grille-qualites {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.carte-qualite {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.carte-qualite p {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.section-cv {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.bouton-cv {
+  padding: 1.5rem 4rem;
+  font-size: 1.1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  letter-spacing: 0.15em;
+  font-weight: 900;
+  min-width: 250px;
+  justify-content: center;
+}
+
+.section-analyse {
+  margin-bottom: 2rem;
+}
+
+.conteneur-tableau {
+  overflow-x: auto;
+}
+
+.tableau-analyse {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.tableau-analyse thead tr {
+  background: rgba(124, 58, 237, 0.2);
+}
+
+.tableau-analyse th {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 2px solid var(--couleur-accent);
+}
+
+.tableau-analyse td {
+  padding: 1rem;
+}
+
+.tableau-analyse tbody tr {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.tableau-analyse tbody tr:last-child {
+  border-bottom: none;
+}
+
 /* Pages comptences */
 
 .mise-en-page-competences {

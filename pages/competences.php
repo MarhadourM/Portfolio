@@ -1,5 +1,5 @@
 <section id="page-competences" class="conteneur-page masque">
-            <h2 class="grand-titre">Mon <span class="accent">Référentiel</span></h2>
+            <h2 class="grand-titre">Mes <span class="accent">Compétences</span></h2>
             
             <div class="onglets-semestres">
                 <button onclick="setSemestre(3)" id="btn-s3" class="bouton-semestre actif">S3</button>
