@@ -31,7 +31,7 @@
             <td class="cellule-ressources">SAE</td>
             <td class="cellule-description"><strong>Cahier des charges</strong> - Estimation du temps nécessaire pour les maquettes pour avoir une planification réaliste</td>
             <td style="text-align:right;">
-                <button class="bouton-apercu" onclick="ouvrirImage('/Portfolio/assets/img/planification.png')">
+                <button class="bouton-apercu" onclick="ouvrirImage('assets/img/planification.png')">
                     <i class="fas fa-eye"> Preuve</i>
                 </button>
             </td>

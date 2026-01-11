@@ -31,7 +31,7 @@
             <td class="cellule-ressources">SAE</td>
             <td class="cellule-description"><strong>Phase Développement</strong> - Utilisation des securités basiques</td>
             <td style="text-align:right;">
-                <button class="bouton-apercu" onclick="ouvrirImage('/Portfolio/assets/img/securite.png')">
+                <button class="bouton-apercu" onclick="ouvrirImage('assets/img/securite.png')">
                     <i class="fas fa-eye"> Preuve</i>
                 </button>
             </td>
@@ -43,7 +43,7 @@
             <td class="cellule-ressources">SAE</td>
             <td class="cellule-description"><strong>Phase Développement</strong> - Verification des données rentrées</td>
             <td style="text-align:right;">
-                <button class="bouton-apercu" onclick="ouvrirImage('/Portfolio/assets/img/securite2.png')">
+                <button class="bouton-apercu" onclick="ouvrirImage('assets/img/securite2.png')">
                     <i class="fas fa-eye"> Preuve</i>
                 </button>
             </td>

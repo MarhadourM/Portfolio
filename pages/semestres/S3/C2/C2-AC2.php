@@ -31,7 +31,7 @@
         <td class="cellule-ressources">R3.02 Dev efficace</td>
             <td class="cellule-description"> Création d'un methode adaptée</td>
             <td style="text-align:right;">
-                <button class="bouton-apercu" onclick="ouvrirImage('/Portfolio/assets/img/methode.png')">
+                <button class="bouton-apercu" onclick="ouvrirImage('assets/img/methode.png')">
                     <i class="fas fa-eye"> Preuve</i>
                 </button>
             </td>

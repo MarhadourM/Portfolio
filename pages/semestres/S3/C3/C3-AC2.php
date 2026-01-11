@@ -31,7 +31,7 @@
             <td class="cellule-ressources">SAE</td>
             <td class="cellule-description">Deploiement de notre produit fini sur serveur</td>
             <td style="text-align:right;">
-                <button class="bouton-apercu" onclick="ouvrirImage('/Portfolio/assets/img/deploiement-sur-serveur.png')">
+                <button class="bouton-apercu" onclick="ouvrirImage('assets/img/deploiement-sur-serveur.png')">
                     <i class="fas fa-eye"> Preuve</i>
                 </button>
             </td>

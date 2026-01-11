@@ -30,7 +30,7 @@
             <td class="cellule-ressources">R3.02 Dev efficace</td>
             <td class="cellule-description">Tests unitaires</td>
             <td style="text-align:right;">
-                <button class="bouton-apercu" onclick="ouvrirImage('/Portfolio/assets/img/test.png')">
+                <button class="bouton-apercu" onclick="ouvrirImage('assets/img/test.png')">
                     <i class="fas fa-eye"> Preuve</i>
                 </button>
             </td>

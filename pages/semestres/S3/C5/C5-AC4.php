@@ -40,7 +40,7 @@
             <td class="cellule-ressources">SAE</td>
             <td class="cellule-description"><strong>Soutenance</strong> - Consience de la qualite du produit et donc des eventuelles ameliorations</td>
             <td style="text-align:right;">
-             <button class="bouton-apercu" onclick="ouvrirImage('/Portfolio/assets/img/amelioration.png')">
+             <button class="bouton-apercu" onclick="ouvrirImage('assets/img/amelioration.png')">
                     <i class="fas fa-eye"> Preuve</i>
                 </button>   
             </td>

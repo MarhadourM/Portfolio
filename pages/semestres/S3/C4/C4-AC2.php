@@ -30,7 +30,7 @@
             <td class="cellule-ressources">R3.07 SQL</td>
             <td class="cellule-description"><strong>TD curseur</strong> - création d'un procedure complexe</td>
             <td style="text-align:right;">
-                <button class="bouton-apercu" onclick="ouvrirImage('/Portfolio/assets/img/cursorProcedure.png')">
+                <button class="bouton-apercu" onclick="ouvrirImage('assets/img/cursorProcedure.png')">
                     <i class="fas fa-eye"> Preuve</i>
                 </button>
             </td>

@@ -31,7 +31,7 @@
             <td class="cellule-ressources">R3.05 Prog. System</td>
             <td class="cellule-description">Correction Serveur Meteo -  Grosses difficultés rencontrées sur cet exercice</td>
             <td style="text-align:right;">
-                <button class="bouton-apercu" onclick="ouvrirImage('/Portfolio/assets/img/CorrectionServeurMeteo.png')">
+                <button class="bouton-apercu" onclick="ouvrirImage('assets/img/CorrectionServeurMeteo.png')">
                     <i class="fas fa-eye"> Preuve</i>
                 </button>
             </td>

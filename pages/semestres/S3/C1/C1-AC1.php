@@ -33,7 +33,7 @@
             <td class="cellule-ressources">SAE</td>
             <td class="cellule-description"><strong>Cahier des charges</strong> - exigences fonctionnelles</td>
             <td style="text-align:right;">
-                <button class="bouton-apercu" onclick="ouvrirImage('/Portfolio/assets/img/exigences-fonctionnelles1.png')">
+                <button class="bouton-apercu" onclick="ouvrirImage('assets/img/exigences-fonctionnelles1.png')">
                     <i class="fas fa-eye"> Preuve</i>
                 </button>
             </td>
@@ -44,7 +44,7 @@
             <td class="cellule-ressources">SAE</td>
             <td class="cellule-description"><strong>Cahier des charges</strong> - architectures materielle</td>
             <td style="text-align:right;">
-                <button class="bouton-apercu" onclick="ouvrirImage('/Portfolio/assets/img/exigences-non-fonctionnelles.png')">
+                <button class="bouton-apercu" onclick="ouvrirImage('assets/img/exigences-non-fonctionnelles.png')">
                     <i class="fas fa-eye"> Preuve</i>
                 </button>
             </td>

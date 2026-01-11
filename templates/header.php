@@ -10,14 +10,14 @@
 <body>
     <nav class="barre-navigation">
         <div class="groupe-liens">
-            <a href="competences" class="bouton-menu <?php echo ($page === 'competences') ? 'actif' : ''; ?>">Compétences</a>
-            <a href="projets" class="bouton-menu <?php echo ($page === 'projets') ? 'actif' : ''; ?>">Projets</a>
+            <a href="index.php?page=competences" class="bouton-menu <?php echo ($page === 'competences') ? 'actif' : ''; ?>">Compétences</a>
+            <a href="index.php?page=projets" class="bouton-menu <?php echo ($page === 'projets') ? 'actif' : ''; ?>">Projets</a>
         </div>
 
-        <div class="logo-mm"><a href="home" class="<?php echo ($page === 'home') ? 'actif' : ''; ?>">MM</a></div>
+        <div class="logo-mm"><a href="index.php?page=home" class="<?php echo ($page === 'home') ? 'actif' : ''; ?>">MM</a></div>
 
         <div class="groupe-liens">
-            <a href="parcours" class="bouton-menu <?php echo ($page === 'parcours') ? 'actif' : ''; ?>">Parcours</a>
-            <a href="contact" class="bouton-menu <?php echo ($page === 'contact') ? 'actif' : ''; ?>">Contact</a>
+            <a href="index.php?page=parcours" class="bouton-menu <?php echo ($page === 'parcours') ? 'actif' : ''; ?>">Parcours</a>
+            <a href="index.php?page=contact" class="bouton-menu <?php echo ($page === 'contact') ? 'actif' : ''; ?>">Contact</a>
         </div>
     </nav>

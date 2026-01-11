@@ -12,7 +12,7 @@
                         <p class="bio-texte">
                             Ce portfolio est le reflet de mon parcours académique et de mes projets personnels.
                         </p>
-                        <a href="competences" class="bouton-lien actif bouton-competences">Voir mes compétences Universitaires</a>
+                        <a href="index.php?page=competences" class="bouton-lien actif bouton-competences">Voir mes compétences Universitaires</a>
                     </div>
                 </div>
             </div>

@@ -31,7 +31,7 @@
             <td class="cellule-ressources">SAE</td>
             <td class="cellule-description"><strong>Cahier des charges</strong> - Objectifs généraux du projet</td>
             <td style="text-align:right;">
-                <button class="bouton-apercu" onclick="ouvrirImage('/Portfolio/assets/img/obj-generaux.png')">
+                <button class="bouton-apercu" onclick="ouvrirImage('assets/img/obj-generaux.png')">
                     <i class="fas fa-eye"> Preuve</i>
                 </button>
             </td>

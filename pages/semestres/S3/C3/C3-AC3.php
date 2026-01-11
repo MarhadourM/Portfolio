@@ -31,7 +31,7 @@
             <td class="cellule-ressources">R3.06 Archi Reseaux</td>
             <td class="cellule-description">Securisation grâce a Iptables</td>
             <td style="text-align:right;">
-                <button class="bouton-apercu" onclick="ouvrirImage('/Portfolio/assets/img/gns3.jpg')">
+                <button class="bouton-apercu" onclick="ouvrirImage('assets/img/gns3.jpg')">
                     <i class="fas fa-eye"> Preuve</i>
                 </button>
             </td>

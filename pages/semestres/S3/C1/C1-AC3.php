@@ -31,7 +31,7 @@
             <td class="cellule-ressources">SAE</td>
             <td class="cellule-description"><strong>Phase Développement</strong> - Modèle MVC</td>
             <td style="text-align:right;">
-                <button class="bouton-apercu" onclick="ouvrirImage('/Portfolio/assets/img/architectureMVC.png')">
+                <button class="bouton-apercu" onclick="ouvrirImage('assets/img/architectureMVC.png')">
                     <i class="fas fa-eye"> Preuve</i>
                 </button>
             </td>
@@ -42,7 +42,7 @@
             <td class="cellule-ressources">SAE</td>
             <td class="cellule-description"><strong>Phase Développement</strong> - Utilisation de git </td>
             <td style="text-align:right;">
-                <button class="bouton-apercu" onclick="ouvrirImage('/Portfolio/assets/img/git-exemple.png')">
+                <button class="bouton-apercu" onclick="ouvrirImage('assets/img/git-exemple.png')">
                     <i class="fas fa-eye"> Preuve</i>
                 </button>
             </td>
