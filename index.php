@@ -1,11 +1,8 @@
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
 
 $page = $_GET['page'] ?? 'home';
 require_once __DIR__ . '/templates/header.php';
-// Router les pages
+
 switch ($page) {
     case 'home':
         require 'pages/home.php';
