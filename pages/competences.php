@@ -25,10 +25,10 @@
                     </div>
 
                     <div id="contenu-dynamique">
-                        <?php include 'semestres/S3/S3.php'; ?>
-                        <?php include 'semestres/S4.php'; ?>
-                        <?php include 'semestres/S5.php'; ?>
-                        <?php include 'semestres/S6.php'; ?>
+                        <?php include __DIR__ . '/semestres/S3/S3.php'; ?>
+                        <?php include __DIR__ . '/semestres/S4/S4.php'; ?>
+                        <?php include __DIR__ . '/semestres/S5/S5.php'; ?>
+                        <?php include __DIR__ . '/semestres/S6/S6.php'; ?>
                     </div>
                 </div>
             </div>
