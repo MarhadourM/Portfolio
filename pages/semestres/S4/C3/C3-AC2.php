@@ -13,6 +13,19 @@ if (file_exists($source)) {
     $html = preg_replace("/(\r\n|\r|\n){3,}/", PHP_EOL . PHP_EOL, $html);
 
     echo $html;
+    ?>
+    <table class="tableau-preuves preuve-acquis">
+        <tr class="ligne-preuve">
+            <td class="cellule-ressources">SAE</td>
+            <td class="cellule-description"><strong>Prendre serveur sae</strong> - </td>
+            <td style="text-align:right;">
+                <button class="bouton-apercu" onclick="ouvrirImage('assets/img/exemple-preuve-s4-c1-ac1.png')">
+                    <i class="fas fa-eye"> Preuve</i>
+                </button>
+            </td>
+        </tr>
+    </table>
+    <?php
 } else {
     echo '<div class="ac-tableau"><h3 class="accent" style="margin-bottom:1.5rem;">Fichier source introuvable: ' . htmlspecialchars($source, ENT_QUOTES, 'UTF-8') . '</h3></div>';
 }
